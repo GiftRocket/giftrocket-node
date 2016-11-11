@@ -1,0 +1,46 @@
+{
+  "name": "giftrocket",
+  "version": "1.0.0",
+  "description": "A node.js client for the GiftRocket API",
+  "keywords": [
+    "giftrocket",
+    "giftrocket.com"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/giftrocket/giftrocket-node.git"
+  },
+  "bugs": {
+    "url": "http://github.com/giftrocket/giftrocket-node/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/giftrocket/giftrocket-node/blob/master/LICENSE"
+    }
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "4.16.x",
+    "request": "2.74.x"
+  },
+  "devDependencies": {
+    "istanbul": "0.4.x",
+    "jscs": "2.7.x",
+    "jshint": "2.8.x",
+    "mocha": "2.3.x",
+    "proxyquire": "1.7.x",
+    "xyz": "0.5.x"
+  },
+  "homepage": "https://github.com/giftrocket/giftrocket-node#readme",
+  "_id": "giftrocket@1.0.0",
+  "scripts": {},
+  "_npmVersion": "2.15.5",
+  "_nodeVersion": "4.4.5",
+  "maintainers": [
+    {
+      "email": "ben@giftrocket.com"
+    }
+  ],
+  "directories": {}
+}
