@@ -1,7 +1,7 @@
 giftrocket-node
 ==============
 
-A thin node.js client library for the [GiftRocket API][1].
+A node.js client library for the [GiftRocket API][1].
 
 ## Installation
 
