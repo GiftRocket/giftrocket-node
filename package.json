@@ -33,14 +33,16 @@
     "xyz": "0.5.x"
   },
   "homepage": "https://github.com/giftrocket/giftrocket-node#readme",
-  "_id": "giftrocket@1.0.0",
   "scripts": {},
   "_npmVersion": "2.15.5",
   "_nodeVersion": "4.4.5",
   "maintainers": [
-    {
-      "email": "ben@giftrocket.com"
-    }
+    " <ben@giftrocket.com>"
   ],
-  "directories": {}
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "author": "Ben Rocket <ben@giftrocket.com> (https://www.giftrocket.com/rewards)",
+  "license": "MIT"
 }
