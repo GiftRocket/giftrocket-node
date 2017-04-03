@@ -17,7 +17,12 @@ All API requests require an access token.  A sandbox access token is assigned up
 
 ```javascript
 var GiftRocket = require('giftrocket');
-var client = new GiftRocket("[YOUR_ACCESS_TOKEN]");
+
+// Sandbox environment
+var client = new GiftRocket("[SANBOX_ACCESS_TOKEN]", "https://testflight.giftrocket.com");
+
+// Production environment
+var client = new GiftRocket("[PRODUCTION_ACCESS_TOKEN]", "https://www.giftrocket.com");
 ```
 
 
@@ -38,7 +43,7 @@ client.createOrder({
         "email": "person@yourteam.com",
         "name": "Person Example"
       },
-      "style_id": "thank_you_tree"
+      "style_id": "[STYLE_ID]"
     }
   ]
 }, function(err, results) {
@@ -61,7 +66,7 @@ Production funding sources must be added through the web dashboard. A sandbox fu
 
 ```javascript
 // Retrieve a list of your funding sources (credit card, ach, etc).
-client.getFundingSources(function(err, results) {
+client.getFundingSources({}, function(err, results) {
   console.log(JSON.stringify(results, null, 2));
 });
 ```
@@ -70,7 +75,7 @@ client.getFundingSources(function(err, results) {
 A style defines the presentation of your gift.  The styles endpoint returns an array of card designs.
 
 ```javascript
-client.getStyles(function(err, results) {
+client.getStyles({}, function(err, results) {
   console.log(JSON.stringify(results, null, 2));
 });
 ```
