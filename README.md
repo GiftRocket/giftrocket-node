@@ -28,7 +28,7 @@ var client = new GiftRocket("[PRODUCTION_ACCESS_TOKEN]", "https://www.giftrocket
 
 ### Orders
 
-See [API documentation][3] for all Order options.  Use the FoundingSources resource to look up a valid method for your payment (i.e. credit card, ACH, etc).
+See [API documentation][3] for all Order options, including `delivery_method`.  Use the FoundingSources resource to look up a valid method for your payment (i.e. credit card, ACH, etc).
 
 ```javascript
 // Create a new order, specifying your gift options
@@ -41,7 +41,8 @@ client.createOrder({
       "message": "Such a great way to show appreciation to others!",
       "recipient": {
         "email": "person@yourteam.com",
-        "name": "Person Example"
+        "name": "Person Example",
+        "delivery_method": "EMAIL"
       },
       "style_id": "[STYLE_ID]"
     }
