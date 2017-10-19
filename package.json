@@ -1,6 +1,6 @@
 {
   "name": "giftrocket",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A node.js client for the GiftRocket API",
   "keywords": [
     "giftrocket",
@@ -21,6 +21,7 @@
   ],
   "main": "index.js",
   "dependencies": {
+    "jsonwebtoken": "8.1.x",
     "lodash": "4.16.x",
     "request": "2.74.x"
   },
