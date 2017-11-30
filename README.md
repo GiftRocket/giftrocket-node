@@ -39,6 +39,7 @@ client.createOrder({
     {
       "amount": 40,
       "message": "Such a great way to show appreciation to others!",
+      "catalog": ["Q24BD9EZ332JT", "OKMHM2X2OHYV"],
       "recipient": {
         "email": "person@yourteam.com",
         "name": "Person Example",
