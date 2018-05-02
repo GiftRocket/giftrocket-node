@@ -19,7 +19,7 @@ All API requests require an access token.  A sandbox access token is assigned up
 var GiftRocket = require('giftrocket');
 
 // Sandbox environment
-var client = new GiftRocket("powpZn3umB0Ry7ou6auX", "https://testflight.giftrocket.com");
+var client = new GiftRocket("[SANDBOX_ACCESS_TOKEN]", "https://testflight.giftrocket.com");
 
 // Production environment
 var client = new GiftRocket("[PRODUCTION_ACCESS_TOKEN]", "https://www.giftrocket.com");
