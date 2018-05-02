@@ -19,7 +19,7 @@ All API requests require an access token.  A sandbox access token is assigned up
 var GiftRocket = require('giftrocket');
 
 // Sandbox environment
-var client = new GiftRocket("[SANBOX_ACCESS_TOKEN]", "https://testflight.giftrocket.com");
+var client = new GiftRocket("powpZn3umB0Ry7ou6auX", "https://testflight.giftrocket.com");
 
 // Production environment
 var client = new GiftRocket("[PRODUCTION_ACCESS_TOKEN]", "https://www.giftrocket.com");
@@ -34,21 +34,21 @@ See [API documentation][3] for all Order options, including `delivery_method`.  
 // Create a new order, specifying your gift options
 // as an array of objects.
 client.createOrder({
-  "funding_source_id": "[FUNDING_SOURCE_ID]",
+  "funding_source_id": "QEW8P5NHEW95",
   "gifts": [
     {
       "amount": 40,
       "message": "Such a great way to show appreciation to others!",
       "catalog": ["Q24BD9EZ332JT", "OKMHM2X2OHYV"],
       "recipient": {
-        "email": "person@yourteam.com",
-        "name": "Person Example",
+        "email": "giftrocket-api@quester.com",
+        "name": "Eric Henderson",
         "delivery_method": "EMAIL"
-      },
-      "style_id": "[STYLE_ID]"
+      }
     }
   ]
 }, function(err, results) {
+  console.log(JSON.stringify(err, null, 2));
   console.log(JSON.stringify(results, null, 2));
 });
 
@@ -91,6 +91,14 @@ client.getGifts({offset: 10}, function(err, results) {
 });
 
 client.getGift("[GIFT_ID]", function(err, results) {
+  console.log(JSON.stringify(results, null, 2));
+});
+```
+
+### Catalog
+
+```javascript
+client.getCatalog(function(err, results) {
   console.log(JSON.stringify(results, null, 2));
 });
 ```
